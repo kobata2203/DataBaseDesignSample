@@ -26,17 +26,20 @@ Things you may want to cover:
 # ChatSpace DB設計
 ## usersテーブル
 |Column|Type|Options|
+|------|----|-------|
 |name|srting|index:true,null:false,unique:true|
 |email|string|null:false|
 |password|string|null: false|
 
 ## group-usersテーブル
 |Column|Type|Options|
+|------|----|-------|
 |group_name|srting|index:true,null:false,unique:true|
 |chat_member|srting|index:true,null:false,unique:true|
 
 ## chat-messeageテーブル
 |Column|Type|Options|
+|------|----|-------|
 |message|srting|index:true,null:false,unique:true|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
