@@ -31,18 +31,19 @@ Things you may want to cover:
 |email|string|null:false|
 |password|string|null: false|
 
-## group-usersテーブル
+## group_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_name|srting|index:true,null:false,unique:true|
 |chat_member|srting|index:true,null:false,unique:true|
 
-## chat-messeageテーブル
+## chat_textテーブル
 |Column|Type|Options|
 |------|----|-------|
-|message|srting|index:true,null:false,unique:true|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|text|srting|
+|image|string|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
