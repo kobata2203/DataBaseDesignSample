@@ -48,3 +48,5 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :user
+- has_many :group_names, through: chat_members
+- has_many :texts
